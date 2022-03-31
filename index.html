@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projeto Final CEL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg");
+  min-height: 90%;
+}
+#mapa { 
+    text-align: center;
+}  
+h2{
+  text-align: center;
+
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}  
+
+ /* Youtube */ 
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* Intagram */  
+.fa-instagram {
+  background: #125688;
+  color: white;
+}  
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTATO</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Aberto das 10h às 12h</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Restaurante<br>Comida Br</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Restaurante<br>Comida Br</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Deixe-me ver o cardápio</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pratos</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Saladas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Frango Milanesa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$24.99</span></h1>
+      <p class="w3-text-grey">Frango Milanesa, polenta milanesa arroz branco feijão</p>
+      <hr>
+   
+      <h1><b>CONTRA FILE</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$35.50</span></h1>
+      <p class="w3-text-grey">Contra file Grelhado, batata frita, arroz branco, feijão carioca, farofa de farinha de mandioca, salada de alface, tomate e cebola.</p>
+      <hr>
+      
+      <h1><b>FILE DE PEIXE</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$37.00</span></h1>
+      <p class="w3-text-grey">File de peixe a milanesa, batata frita, arroz branco, feijão carioca, farofa de farinha de mandioca, salada de alface, tomate e cebola.</p>
+      <hr>
+
+      <h1><b>Prato Vegetariano</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$46.50</span></h1>
+      <p class="w3-text-grey">BERINJELA Á PARMEGIANA ,ARROZ ,FEIJAO,SALADINHA E FRITAS</p>
+      <hr>
+
+      <h1><b>FILÉ DE FRANGO À CAVALO</b> <span class="w3-tag w3-pink w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$70.00</span></h1>
+      <p class="w3-text-grey">Grelhado, arroz branco, fritas, ovo, farofa e vinagrete.</p>
+      <hr>
+
+      <h1><b>FILÉ DE PEIXE À BRASILEIRA</b> <span class="w3-tag w3-blue w3-round">Especial</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$121.50</span></h1>
+      <p class="w3-text-grey">Filé de peixe grelhado com molho de camarão, pirão de camarão, arroz branco e fritas.</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>SALADA SIMPLES</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">R$23.50</span></h1>
+      <p class="w3-text-grey">Alface, tomate, cenoura e cebola.</p>
+      <hr>
+   
+      <h1><b>SALADA À MODA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$34.50</span></h1>
+      <p class="w3-text-grey">Alface, couve-flor, tomate, cebola, brócolis, cenoura, palmito e ervilha.</p>
+      <hr>
+      
+      <h1><b>SALADA DE PALMITO</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$38.00</span></h1>
+      <p class="w3-text-grey">Alface, palmito, ervilha, cebola, cenoura e tomate.</p>
+      <hr>
+
+      <h1><b>LEGUMES NA MANTEIGA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$41.50</span></h1>
+      <p class="w3-text-grey">Palmito, brócolis, ervilha, cenoura e couve-flor.</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>REFRIGERANTE LATA</b> <span class="w3-tag w3-grey w3-round">350 ml</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$5.50</span></h1>
+      <p class="w3-text-grey">Coca-cola, Fanta, Guarana</p>
+      <hr>
+   
+      <h1><b>CERVEJA LATA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$10.50</span></h1>
+      <p class="w3-text-grey">Skol, Itaipava, Brahma.</p>
+      <hr>
+      
+      <h1><b>SUCO LATA DELL VALE</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$6.50</span></h1>
+      <p class="w3-text-grey">Uva, Manga, Pêssego, Maracujá.</p>
+      <hr>
+      
+      <h1><b>ÁGUA MINERAL</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$7.50</span></h1>
+      <p class="w3-text-grey">Água com gás, sem gás</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- Sobre Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre</h1>
+    <p> O Restaurante Comida Br foi fundado em 2021 pela Sra. Christiane em  24 de Agosto, servimos comidas brasileira da melhor qualidade, com tudo fresco, bem temperado, ingredientes selecionados e preparado com muito amor,   somos um ambiente familiar perto da praia e coração da cidade de São Vicente.</p>
+    <p><strong>A Chef?</strong> A própria senhora Christiane <img src="https://cdn.pixabay.com/photo/2019/02/04/22/05/chef-3975835_960_720.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Temos orgulho dos nossos interiores.</p>
+    <img src="https://cdn.pixabay.com/photo/2015/05/31/11/23/table-791167_960_720.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Horário de funcionamento</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Segunda & Terça FECHADO</p>
+        <p>Quarta-feira 10h00 - 24h00</p>
+        <p>Quinta-feira 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Sexta-feira 10:00 - 12:00</p>
+        <p>Sábado  10:00 - 23:00</p>
+        <p>Domingo 10:00 - 23:00</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+  <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed? 
+pb=!1m18!1m12!1m3!1d3645.8255393282498!2d-46.391770549812705!3d-23.96660858249019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1c9a8f55550f%3A0x94f3774923f45e08!2sR.%20Campos%20Sales%2C%2059%20-%20Centro%2C%20S%C3%A3o%20Vicente%20-%20SP%2C%2011310-430!5e0!3m2!1spt-BR!2sbr!4v1648704874422!5m2!1spt-BR!2sbr" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+</div>
+
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contato</h1>
+    <p>Encontre-nos em nosso endereço em Rua Campos Sales, nº 59 Bairro: Centro, São Vicente- SP ou ligue para 13-32122330</p>
+    <p><span class="w3-tag">INFORMAÇÃO!</span> Oferecemos serviço completo de Buffet para qualquer evento, grande ou pequeno. Entendemos suas necessidades e atenderemos a comida para satisfazer os maiores critérios de todos, tanto na aparência quanto no sabor.</p>
+    <p class="w3-xxlarge"><strong>Reserva</strong> 
+uma mesa, peça o especial de hoje ou mande-nos uma mensagem:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="
+Quantas pessoas" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2022-03-31T16:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem \ Requisitos especiais" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">ENVIAR MENSAGEM</button></p>
+    </form>
+  </div>
+</div>
+
+  <h2>Redes Sociais</h2>
+  
+<!-- Adicione seu link e font awesome icons -->
+<center>
+
+<a href="https://web.facebook.com/christiane.moon" class="fa fa-facebook"></a>
+
+<a href="https://twitter.com/Annemoo70771563" class="fa fa-twitter"></a>
+
+<a href="https://www.youtube.com/channel/UCJdku_MHhU-XO8-jaMNcGWw" class="fa fa-youtube"></a>
+
+<a href="https://www.instagram.com/annemoom/" class="fa fa-instagram"></a>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+     <p>Desenvolvido por <a href="https://github.com/chritianegozza" title="W3.CSS" target="_blank" class="w3-hover-text-green"> Christiane</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

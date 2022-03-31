@@ -1,0 +1,37 @@
+.wow {
+  width: 100px;
+}
+
+#redes{
+  text-align: center;
+}
+
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.social a {
+/* tamanho da imagem */
+    height: 32px;
+    width: 32px;
+/* image replacement */
+    display: block;
+    text-indent: -9999px; 
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+    }
+    .social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+    }
+    .social a[href*="instagram.com"] {
+    background-image: url(../img/instagram.png);
+    }
